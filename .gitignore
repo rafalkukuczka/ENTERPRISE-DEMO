@@ -1,0 +1,25 @@
+# Visual Studio 2022
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sdf
+*.cache
+*.dbmdl
+*.dbproj.schemaview
+*.psess
+*.vsp
+*.log
+*.tlog
+*.vsix
+bin/
+obj/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+.history/
+
+# Environment files
+.env
+.env.local
