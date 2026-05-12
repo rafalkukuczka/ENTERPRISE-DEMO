@@ -1,3 +1,7 @@
 #!/bin/bash
-sudo docker compose down
-sudo docker compose up --build
+
+echo "Restarting containers..." && pwd
+
+./down.sh || echo "Failed to stop containers, proceeding with starting..." && true
+./up.sh
+
