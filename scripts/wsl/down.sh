@@ -1,8 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -e
 
-pushd "../../infra"
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+INFRA_DIR="$SCRIPT_DIR/../../infra"
 
-echo "Stopping containers and removing related images..." && pwd
-docker compose down --rmi all --volumes --remove-orphans
+pushd "$INFRA_DIR"
+
+docker compose down
 
 popd
