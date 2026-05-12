@@ -8,4 +8,6 @@ pushd "$INFRA_DIR"
 
 docker compose down
 
+docker compose ps
+
 popd
